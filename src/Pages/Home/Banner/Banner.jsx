@@ -1,14 +1,10 @@
 import hotel from "../../../../public/hotel.jpg"
 import hotel1 from "../../../../public/hotel1.jpg"
 import hotel2 from "../../../../public/hotel2.jpg"
-import hotel3 from "../../../../public/hotel3.jpg"
+// import hotel3 from "../../../../public/hotel3.jpg"
 import hotel4 from "../../../../public/hotel4.jpg"
-import hotel5 from "../../../../public/hotel5.jpg"
-import hotel6 from "../../../../public/hotel6.jpg"
-// import { FaArrowRightLong } from "react-icons/fa6";
-// import { FaArrowLeftLong } from "react-icons/fa6";
-// // import { BsArrowRightSquare } from "react-icons/bs";
-// // import { BsArrowLeftSquare } from "react-icons/bs";
+// import hotel5 from "../../../../public/hotel5.jpg"
+// import hotel6 from "../../../../public/hotel6.jpg"
 const Banner = () => {
     return (
         <div className="carousel w-full lg:h-[650px]">
