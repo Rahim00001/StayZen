@@ -7,7 +7,7 @@ const Navbar = () => {
         <li><NavLink to='/about'>About</NavLink></li>
         <li><NavLink to='/services'>Rooms</NavLink></li>
         <li><NavLink to='/blog'>My Bookings</NavLink></li>
-        <li><NavLink to='/contact'>Contact</NavLink></li>
+        <li><NavLink to='/login'>Login</NavLink></li>
     </>
     return (
         <nav className="max-w-7xl mx-auto">
