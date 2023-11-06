@@ -10,7 +10,7 @@ const Navbar = () => {
         <li><NavLink to='/contact'>Contact</NavLink></li>
     </>
     return (
-        <nav>
+        <nav className="max-w-7xl mx-auto">
             <div className="navbar bg-base-100 h-24 mb-5">
                 <div className="navbar-start">
                     <div className="dropdown">
@@ -21,7 +21,7 @@ const Navbar = () => {
                             {navlinks}
                         </ul>
                     </div>
-                    <Link to='/' className=""><img src={stayZayn} alt="logo" className="w-20 h-14 rounded-md lg:ml-5" /></Link>
+                    <Link to='/' className=""><img src={stayZayn} alt="logo" className="w-20 h-14 rounded-md" /></Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
@@ -29,7 +29,7 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <Link to='/bookings'><button className="btn btn-outline btn-primary mr-3">Book Now</button></Link>
+                    <Link to='/bookings'><button className="btn btn-neutral btn-outline mr-3">Book Now</button></Link>
                 </div>
             </div>
         </nav>
