@@ -1,17 +1,21 @@
 /* eslint-disable react/prop-types */
 
+import { Link } from "react-router-dom";
+
 const Room = ({ room }) => {
-    const { img, price, name, size } = room;
+    const { _id, img, price, name, size } = room;
     return (
-        <div className="border">
-            <img src={img} className="h-[400px] w-full" alt="" />
-            <div className="flex justify-between bg-slate-300">
-                <div className="flex gap-5">
-                    <p>{name}</p>
-                    <p>{size}</p>
+        <div>
+            <Link to={`/detiles/${_id}`}>
+                <img src={img} className="h-[400px] w-full" alt="" />
+            </Link>
+            <div className="flex justify-between bg-slate-700 text-white py-5 px-2 rounded-b">
+                <div className="flex gap-5 items-center">
+                    <p className="text-2xl italic font-bold">{name}</p>
+                    <p className="text-lg font-medium">{size}</p>
                 </div>
                 <div>
-                    <p>{price}</p>
+                    <p className="text-lg font-medium">{`${price}$ per night`}</p>
                 </div>
             </div>
         </div>

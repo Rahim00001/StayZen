@@ -12,9 +12,9 @@ const Rooms = () => {
     console.log(rooms);
     return (
         <div className="w-10/12 mx-auto">
-            <div className="text-center">
-                <h1>Available Rooms</h1>
-                <h2>Find our best rooms</h2>
+            <div className="text-center mb-5">
+                <h1 className="text-5xl font-bold mb-2">Available Rooms</h1>
+                <h2 className="text-lg italic font-medium">Find our best rooms</h2>
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                 {

@@ -33,7 +33,7 @@ const Banner = () => {
                         <button className="btn btn-outline btn-primary">All Rooms</button>
                     </div>
                 </div>
-                <div className="absolute flex justify-end gap-5 transform -translate-y-1/2 left-5 right-5 bottom-0">
+                <div className="absolute flex justify-center gap-5 transform -translate-y-1/2 left-5 right-5 bottom-0">
                     <a href="#slide1" className="btn bg-black text-white hover:text-black">❮</a>
                     <a href="#slide3" className="btn bg-red-600 text-white hover:text-black">❯</a>
                 </div>
@@ -48,7 +48,7 @@ const Banner = () => {
                         <button className="btn btn-outline btn-primary">All Rooms</button>
                     </div>
                 </div>
-                <div className="absolute flex justify-end gap-5 transform -translate-y-1/2 left-5 right-5 bottom-0">
+                <div className="absolute flex justify-center gap-5 transform -translate-y-1/2 left-5 right-5 bottom-0">
                     <a href="#slide2" className="btn bg-black text-white hover:text-black">❮</a>
                     <a href="#slide4" className="btn bg-red-600 text-white hover:text-black">❯</a>
                 </div>
@@ -63,7 +63,7 @@ const Banner = () => {
                         <button className="btn btn-outline btn-primary">All Rooms</button>
                     </div>
                 </div>
-                <div className="absolute flex justify-end gap-5 transform -translate-y-1/2 left-5 right-5 bottom-0">
+                <div className="absolute flex justify-center gap-5 transform -translate-y-1/2 left-5 right-5 bottom-0">
                     <a href="#slide3" className="btn bg-black text-white hover:text-black">❮</a>
                     <a href="#slide1" className="btn bg-red-600 text-white hover:text-black">❯</a>
                 </div>
