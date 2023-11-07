@@ -4,7 +4,7 @@ import Navbar from "../Pages/Shared/Footer/Navbar";
 
 const Main = () => {
     return (
-        <div>
+        <div className="font-playfair">
             <Navbar></Navbar>
             <Outlet></Outlet>
             <Footer></Footer>
