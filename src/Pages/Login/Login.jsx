@@ -1,12 +1,25 @@
 import { Link } from "react-router-dom";
 import loginImg from "../../../public/logIn1.jpg"
+import { AuthContext } from "../../providers/AuthProviders";
+import { useContext } from "react";
 const Login = () => {
     const handleLogin = e => {
+
+        const { signInUser } = useContext(AuthContext);
+
         e.preventDefault();
         const form = e.target;
         const email = form.email.value;
         const password = form.password.value;
         console.log(email, password);
+        signInUser(email, password)
+            .then(result => {
+                console.log(result.user);
+                form.reset();
+            })
+            .catch(error => {
+                console.error(error);
+            })
     }
     return (
         <div className="hero min-h-[85vh]">

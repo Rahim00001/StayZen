@@ -1,6 +1,11 @@
 import { Link } from "react-router-dom";
 import registerImg from "../../../public/register.jpg"
+import { AuthContext } from "../../providers/AuthProviders";
+import { useContext } from "react";
 const Register = () => {
+
+    const { createUser } = useContext(AuthContext);
+
     const handleRegister = e => {
         e.preventDefault();
         const form = e.target;
@@ -9,6 +14,15 @@ const Register = () => {
         const photo = form.photo.value
         const password = form.password.value;
         console.log(name, email, photo, password);
+
+        // create User
+        createUser(email, password)
+            .then(result => {
+                console.log(result.user);
+            })
+            .catch(error => {
+                console.error(error);
+            })
     }
     return (
         <div className="hero min-h-[85vh]">
