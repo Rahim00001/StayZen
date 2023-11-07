@@ -1,0 +1,79 @@
+[
+    {
+        "id": 1,
+        "name": "Standard Room",
+        "img": "https://i.ibb.co/DtY9fRB/room6.jpg",
+        "price": 150.00,
+        "description": "Enjoy a peaceful stay in our cozy single room with a view of the city skyline. This room is perfect for solo travelers looking for a comfortable and relaxing experience. The room features a twin-size bed, a private bathroom, and all the essential amenities you need for a pleasant stay. Whether you're here for business or leisure, you'll find everything you need in this well-appointed room.",
+        "view": "City Skyline",
+        "bed_size": "Twin",
+        "size": "250 sq. ft.",
+        "person": 1
+    },
+    {
+        "id": 2,
+        "name": "Superior Room",
+        "img": "https://i.ibb.co/Y2Ttb13/room5.jpg",
+        "price": 250.00,
+        "description": "Step into spacious luxury in our double room with a balcony overlooking the garden. Ideal for couples or those who appreciate extra space, this room features a comfortable queen-size bed and a private balcony where you can enjoy the tranquil garden view. With a size of 400 sq. ft., this room offers ample room to relax and unwind. Make your stay a memorable one with this elegant accommodation.",
+        "view": "Garden View",
+        "bed_size": "Queen",
+        "size": "400 sq. ft.",
+        "person": 2
+    },
+    {
+        "id": 3,
+        "name": "Signature Room",
+        "img": "https://i.ibb.co/rFND7jZ/room4.jpg",
+        "price": 350.00,
+        "description": "Indulge in the lap of luxury with our spacious suite featuring a private jacuzzi and an oceanfront view. This king-size bed suite offers 600 sq. ft. of opulent living space, complete with a private jacuzzi for a truly relaxing experience. Bask in the breathtaking ocean views from the comfort of your room. Whether it's a special occasion or you simply deserve the best, this suite delivers an unforgettable experience.",
+        "view": "Oceanfront",
+        "bed_size": "King",
+        "size": "600 sq. ft.",
+        "person": 2
+    },
+    {
+        "id": 4,
+        "name": "Single Room",
+        "img": "https://i.ibb.co/cNtScWk/room3.jpg",
+        "price": 200.00,
+        "description": "Experience the charm of our twin room with vintage decor and a garden view. This room is designed for those who appreciate unique aesthetics. The room features twin beds and a garden view that adds to the tranquil ambiance. With 300 sq. ft. of space, it provides a cozy retreat with a touch of nostalgia. Enjoy a delightful stay in this one-of-a-kind room.",
+        "view": "Garden View",
+        "bed_size": "Twin",
+        "size": "300 sq. ft.",
+        "person": 2
+    },
+    {
+        "id": 5,
+        "name": "Executive Suite",
+        "img": "https://i.ibb.co/P4bKgC4/room1.jpg",
+        "price": 300.00,
+        "description": "Elevate your stay in our executive suite with a private office space and a city view. This king-size bed suite offers a spacious 700 sq. ft. of luxurious living space, complete with a private office area for your convenience. Enjoy a panoramic city view from your room, making it perfect for business travelers or those who want to stay productive during their visit. Experience a blend of comfort and functionality.",
+        "view": "City View",
+        "bed_size": "King",
+        "size": "700 sq. ft.",
+        "person": 3
+    },
+    {
+        "id": 6,
+        "name": "Deluxe Room",
+        "img": "https://i.ibb.co/v4Xx7tY/room2.jpg",
+        "price": 180.00,
+        "description": "Find solace in our quaint single room featuring a cozy fireplace and a mountain view. This room is perfect for solo travelers seeking a tranquil retreat. The room features twin beds, a charming fireplace, and picturesque mountain views. With 270 sq. ft. of space, it's an ideal place to unwind and enjoy the serene mountain atmosphere.",
+        "view": "Mountain View",
+        "bed_size": "Twin",
+        "size": "270 sq. ft.",
+        "person": 1
+    },
+    {
+        "id": 7,
+        "name": "Luxury Suite Room",
+        "img": "https://i.ibb.co/4JTkVCH/room7.jpg",
+        "price": 280.00,
+        "description": "Experience elegance in our luxurious suite with a private terrace and panoramic ocean view. This spacious suite with a king-size bed offers 650 sq. ft. of living space, complete with a private terrace where you can take in the breathtaking ocean vistas. Whether it's a romantic getaway or a special occasion, this suite is designed for those who appreciate the finer things in life.",
+        "view": "Ocean View",
+        "bed_size": "King",
+        "size": "650 sq. ft.",
+        "person": 4
+    }
+]
