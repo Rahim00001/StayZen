@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
 import loginImg from "../../../public/logIn1.jpg"
-import { AuthContext } from "../../providers/AuthProviders";
 import { useContext } from "react";
+import { AuthContext } from "../../providers/AuthProviders";
 const Login = () => {
     const handleLogin = e => {
 
-        const { signInUser } = useContext(AuthContext);
+        const { signInUser } = useContext(AuthContext)
 
         e.preventDefault();
         const form = e.target;
