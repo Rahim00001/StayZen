@@ -1,9 +1,9 @@
-import { useLoaderData } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 
 const RoomDetiles = () => {
     const room = useLoaderData();
     console.log(room);
-    const { img, price, bed_size, description, name, person, size, view } = room
+    const { _id, img, price, bed_size, description, name, person, size, view } = room
     return (
         <div className="flex flex-col lg:flex-row gap-5 items-center w-10/12 mx-auto mb-5">
             <div className="lg:w-1/2">
@@ -23,7 +23,9 @@ const RoomDetiles = () => {
                 <div>
                     <p className="font-semibold leading-7">{`More Info: ${description}`}</p>
                 </div>
-                <button className="btn btn-neutral mt-5">Book Now</button>
+                <Link to={`/booking/${_id}`}>
+                    <button className="btn btn-neutral mt-5">Book Now</button>
+                </Link>
             </div>
         </div>
     );
