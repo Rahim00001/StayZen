@@ -1,13 +1,25 @@
 import { Link, NavLink } from "react-router-dom";
 import stayZayn from "../../../../public/StayZen1.png"
+import { useContext } from "react";
+import { AuthContext } from "../../../providers/AuthProviders";
 
 const Navbar = () => {
+
+    const { user, logOutUser } = useContext(AuthContext);
+
+    const handleLogOut = () => {
+        logOutUser()
+            .then(() => { })
+            .catch(error => {
+                console.error(error);
+            })
+    }
+
     const navlinks = <>
         <li><NavLink to='/'>Home</NavLink></li>
         <li><NavLink to='/about'>About</NavLink></li>
         <li><NavLink to='/rooms'>Rooms</NavLink></li>
         <li><NavLink to='/blog'>My Bookings</NavLink></li>
-        <li><NavLink to='/login'>Login</NavLink></li>
     </>
     return (
         <nav className="max-w-7xl mx-auto">
@@ -29,7 +41,10 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <Link to='/bookings'><button className="btn btn-neutral btn-outline mr-3">Book Now</button></Link>
+                    {
+                        user?.email ? <button onClick={handleLogOut} className="btn btn-neutral btn-outline mr-3">LogOut</button>
+                            : <Link to="/login" className="btn btn-neutral btn-outline mr-3">Login</Link>
+                    }
                 </div>
             </div>
         </nav>
