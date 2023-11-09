@@ -3,6 +3,7 @@ import { AuthContext } from "../../providers/AuthProviders";
 import BookingTable from "./BookingTable";
 import Swal from "sweetalert2";
 import { Helmet } from "react-helmet-async";
+import axios from "axios";
 
 const MyBookings = () => {
     const { user } = useContext(AuthContext);
@@ -10,10 +11,10 @@ const MyBookings = () => {
 
     const url = `http://localhost:5000/bookings?email=${user?.email}`;
     useEffect(() => {
-        fetch(url)
-            .then(res => res.json())
-            .then(data => {
-                setMybookings(data)
+
+        axios.get(url, { withCredentials: true })
+            .then(res => {
+                setMybookings(res.data)
             })
     }, [])
 

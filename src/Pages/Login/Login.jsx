@@ -3,6 +3,7 @@ import loginImg from "../../../public/logIn1.jpg"
 import { useContext } from "react";
 import { AuthContext } from "../../providers/AuthProviders";
 import { Helmet } from "react-helmet-async";
+import axios from "axios";
 const Login = () => {
     const { signInUser, googleSignIn } = useContext(AuthContext);
     const location = useLocation();
@@ -17,9 +18,20 @@ const Login = () => {
         const password = form.password.value;
         signInUser(email, password)
             .then(result => {
-                console.log(result.user);
-                navigate(location?.state ? location?.state : '/')
-                form.reset();
+                const loggedInUser = result.user
+                console.log(loggedInUser);
+                const user = { email };
+
+                axios.post('http://localhost:5000/jwt', user, { withCredentials: true })
+                    .then(res => {
+                        console.log(res.data)
+                        if (res.data.success) {
+                            navigate(location?.state ? location?.state : '/')
+                        }
+                    })
+
+
+                // form.reset();
             })
             .catch(error => {
                 console.error(error);
