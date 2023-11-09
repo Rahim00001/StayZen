@@ -36,7 +36,7 @@ const Rooms = () => {
             <Helmet>
                 <title>StayZen | Rooms</title>
             </Helmet>
-            <div className="flex border w-full justify-end">
+            <div className="flex w-full justify-end mb-2">
                 <div className="flex flex-col">
                     <h1 className="font-bold mb-1 text-lg">Filte By Room Price</h1>
                     <select className="border-black border-2 text-blue-900 font-semibold" onChange={(e) => handlesortByPrice(e)}>

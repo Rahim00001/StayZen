@@ -1,10 +1,15 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import loginImg from "../../../public/logIn1.jpg"
 import { useContext } from "react";
 import { AuthContext } from "../../providers/AuthProviders";
 import { Helmet } from "react-helmet-async";
 const Login = () => {
     const { signInUser, googleSignIn } = useContext(AuthContext);
+    const location = useLocation();
+    const navigate = useNavigate();
+    console.log(location);
+
+
     const handleLogin = e => {
         e.preventDefault();
         const form = e.target;
@@ -14,6 +19,7 @@ const Login = () => {
         signInUser(email, password)
             .then(result => {
                 console.log(result.user);
+                navigate(location?.state ? location?.state : '/')
                 form.reset();
             })
             .catch(error => {
@@ -25,6 +31,7 @@ const Login = () => {
         googleSignIn()
             .then(result => {
                 console.log(result.user)
+                navigate(location?.state ? location?.state : '/')
             })
             .catch(error => {
                 console.error(error);
