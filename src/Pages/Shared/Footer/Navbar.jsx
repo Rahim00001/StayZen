@@ -17,9 +17,9 @@ const Navbar = () => {
 
     const navlinks = <>
         <li><NavLink to='/'>Home</NavLink></li>
-        <li><NavLink to='/about'>About</NavLink></li>
         <li><NavLink to='/rooms'>Rooms</NavLink></li>
-        <li><NavLink to='/blog'>My Bookings</NavLink></li>
+        <li><NavLink to='/bookings'>My Bookings</NavLink></li>
+        <li><NavLink to='/about'>About</NavLink></li>
     </>
     return (
         <nav className="max-w-7xl mx-auto">
