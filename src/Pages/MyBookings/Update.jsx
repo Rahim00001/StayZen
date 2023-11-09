@@ -30,7 +30,7 @@ const Update = () => {
         }
         console.log(updatedBooking);
 
-        fetch(`http://localhost:5000/booking/${_id}`, {
+        fetch(`https://stay-zen-server-sigma.vercel.app/booking/${_id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'

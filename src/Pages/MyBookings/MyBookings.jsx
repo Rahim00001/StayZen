@@ -9,7 +9,7 @@ const MyBookings = () => {
     const { user } = useContext(AuthContext);
     const [mybookings, setMybookings] = useState([]);
 
-    const url = `http://localhost:5000/bookings?email=${user?.email}`;
+    const url = `https://stay-zen-server-sigma.vercel.app/bookings?email=${user?.email}`;
     useEffect(() => {
 
         axios.get(url, { withCredentials: true })
@@ -30,7 +30,7 @@ const MyBookings = () => {
             confirmButtonText: "Yes, delete it!"
         }).then((result) => {
             if (result.isConfirmed) {
-                fetch(`http://localhost:5000/bookings/${id}`, {
+                fetch(`https://stay-zen-server-sigma.vercel.app/bookings/${id}`, {
                     method: 'DELETE'
                 })
                     .then(res => res.json())

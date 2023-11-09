@@ -10,6 +10,7 @@ import Booking from "../Pages/Booking/Booking";
 import MyBookings from "../Pages/MyBookings/MyBookings";
 import PrivateRoute from "./PrivateRoute";
 import Update from "../Pages/MyBookings/Update";
+import About from "../Pages/About/About";
 
 const router = createBrowserRouter([
     {
@@ -36,12 +37,12 @@ const router = createBrowserRouter([
             {
                 path: '/detiles/:id',
                 element: <RoomDetiles></RoomDetiles>,
-                loader: ({ params }) => fetch(`http://localhost:5000/rooms/${params.id}`)
+                loader: ({ params }) => fetch(`https://stay-zen-server-sigma.vercel.app/rooms/${params.id}`)
             },
             {
                 path: '/booking/:id',
                 element: <PrivateRoute><Booking></Booking></PrivateRoute>,
-                loader: ({ params }) => fetch(`http://localhost:5000/book/${params.id}`)
+                loader: ({ params }) => fetch(`https://stay-zen-server-sigma.vercel.app/book/${params.id}`)
             },
             {
                 path: '/bookings',
@@ -50,7 +51,11 @@ const router = createBrowserRouter([
             {
                 path: '/updateBooking/:id',
                 element: <Update></Update>,
-                loader: ({ params }) => fetch(`http://localhost:5000/booking/${params.id}`)
+                loader: ({ params }) => fetch(`https://stay-zen-server-sigma.vercel.app/booking/${params.id}`)
+            },
+            {
+                path: '/about',
+                element: <About></About>
             }
 
         ]

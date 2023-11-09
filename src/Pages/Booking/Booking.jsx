@@ -31,7 +31,7 @@ const Booking = () => {
         }
         console.log(booking);
 
-        fetch('http://localhost:5000/bookings', {
+        fetch('https://stay-zen-server-sigma.vercel.app/bookings', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
