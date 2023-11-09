@@ -77,13 +77,13 @@ const Booking = () => {
                             <label className="label">
                                 <span className="label-text">CheakIn</span>
                             </label>
-                            <input type="date" name="cheakIn" placeholder="email" className="input input-bordered" required />
+                            <input type="date" name="cheakIn" placeholder="CheakIn Date" className="input input-bordered" required />
                         </div>
                         <div className="form-control md:w-1/2">
                             <label className="label">
                                 <span className="label-text">CheakOut</span>
                             </label>
-                            <input type="date" name="cheakOut" placeholder="password" className="input input-bordered" required />
+                            <input type="date" name="cheakOut" placeholder="ChaekOut date" className="input input-bordered" required />
                         </div>
                     </div>
                     <div className="form-control mt-6">

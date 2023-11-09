@@ -3,10 +3,8 @@ import loginImg from "../../../public/logIn1.jpg"
 import { useContext } from "react";
 import { AuthContext } from "../../providers/AuthProviders";
 const Login = () => {
+    const { signInUser } = useContext(AuthContext);
     const handleLogin = e => {
-
-        const { signInUser } = useContext(AuthContext)
-
         e.preventDefault();
         const form = e.target;
         const email = form.email.value;

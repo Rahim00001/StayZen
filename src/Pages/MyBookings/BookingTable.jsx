@@ -1,5 +1,7 @@
 /* eslint-disable react/prop-types */
 
+import { Link } from "react-router-dom";
+
 const BookingTable = ({ booking, handleDelete }) => {
     console.log(booking);
     const { room_name, price, number, img, email, cheakOut, cheakIn, _id } = booking;
@@ -30,7 +32,9 @@ const BookingTable = ({ booking, handleDelete }) => {
                 <span className="">{`CheakOut: ${cheakOut}`}</span>
             </td>
             <th>
-                <button className="btn btn-primary btn-xs mb-2">Update</button>
+                <Link to={`/updateBooking/${_id}`}>
+                    <button className="btn btn-primary btn-xs mb-2">Update</button>
+                </Link>
                 <br />
                 <button onClick={() => handleDelete(_id)} className="btn btn-neutral btn-xs">Delete</button>
             </th>
