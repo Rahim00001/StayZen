@@ -3,7 +3,7 @@ import loginImg from "../../../public/logIn1.jpg"
 import { useContext } from "react";
 import { AuthContext } from "../../providers/AuthProviders";
 const Login = () => {
-    const { signInUser } = useContext(AuthContext);
+    const { signInUser, googleSignIn } = useContext(AuthContext);
     const handleLogin = e => {
         e.preventDefault();
         const form = e.target;
@@ -19,6 +19,17 @@ const Login = () => {
                 console.error(error);
             })
     }
+
+    const handleGoogleSignIn = () => {
+        googleSignIn()
+            .then(result => {
+                console.log(result.user)
+            })
+            .catch(error => {
+                console.error(error);
+            })
+    }
+
     return (
         <div className="hero min-h-[85vh]">
             <div className="hero-content flex-col lg:flex-row-reverse lg:gap-12">
@@ -41,7 +52,8 @@ const Login = () => {
                             <input type="password" name="password" placeholder="password" className="input input-bordered" required />
                         </div>
                         <div className="form-control mt-6">
-                            <input type="submit" value="Login" className="btn bg-[#117cff] text-white" />
+                            <input type="submit" value="Login" className="btn bg-[#117cff] text-white mb-2" />
+                            <button onClick={handleGoogleSignIn} className="btn btn-outline btn-primary">Login With Google</button>
                         </div>
                         <p className="text-center my-4">New to StayZen ? <Link to='/register' className="text-[#117cff] font-bold hover:underline">Register</Link></p>
                     </form>
