@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Room from "./Room";
+import { Helmet } from "react-helmet-async";
 
 const Rooms = () => {
     const [rooms, setRooms] = useState([]);
@@ -12,6 +13,9 @@ const Rooms = () => {
     console.log(rooms);
     return (
         <div className="w-10/12 mx-auto">
+            <Helmet>
+                <title>StayZen | Rooms</title>
+            </Helmet>
             <div className="text-center mb-5">
                 <h1 className="text-5xl font-bold mb-2">Available Rooms</h1>
                 <h2 className="text-lg italic font-medium">Find our best rooms</h2>

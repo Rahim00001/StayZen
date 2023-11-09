@@ -2,6 +2,7 @@ import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../providers/AuthProviders";
 import BookingTable from "./BookingTable";
 import Swal from "sweetalert2";
+import { Helmet } from "react-helmet-async";
 
 const MyBookings = () => {
     const { user } = useContext(AuthContext);
@@ -51,6 +52,9 @@ const MyBookings = () => {
 
     return (
         <div>
+            <Helmet>
+                <title>StayZen | My Bookings</title>
+            </Helmet>
             <h1 className="text-center text-5xl font-bold italic mb-5">My Bookings: {mybookings.length}</h1>
             <div className="overflow-x-auto">
                 <table className="table">

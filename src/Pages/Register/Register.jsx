@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import registerImg from "../../../public/register.jpg"
 import { AuthContext } from "../../providers/AuthProviders";
 import { useContext, useState } from "react";
+import { Helmet } from "react-helmet-async";
 const Register = () => {
 
     const { createUser } = useContext(AuthContext);
@@ -46,6 +47,9 @@ const Register = () => {
     }
     return (
         <div className="hero min-h-[85vh]">
+            <Helmet>
+                <title>StayZen | Register</title>
+            </Helmet>
             <div className="hero-content flex-col lg:flex-row lg:gap-12">
                 <div className="w-1/2">
                     <img src={registerImg} alt="" />

@@ -3,6 +3,7 @@ import updateImg from "../../../public/update.jpg"
 import { useContext } from "react";
 import { AuthContext } from "../../providers/AuthProviders";
 import Swal from "sweetalert2";
+import { Helmet } from "react-helmet-async";
 
 const Update = () => {
     const booking = useLoaderData();
@@ -53,6 +54,9 @@ const Update = () => {
 
     return (
         <div>
+            <Helmet>
+                <title>StayZen | Update Booking</title>
+            </Helmet>
             <div>
                 <div className="flex flex-col lg:flex-row items-center w-10/12 mx-auto lg:h-[85vh]">
                     <img src={updateImg} alt="bookingImg" className="lg:w-1/2" />

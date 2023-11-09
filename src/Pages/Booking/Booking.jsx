@@ -3,6 +3,7 @@ import bookingImg from "../../../public/onlineBooking.jpg"
 import { useContext } from "react";
 import { AuthContext } from "../../providers/AuthProviders";
 import Swal from "sweetalert2";
+import { Helmet } from "react-helmet-async";
 
 
 const Booking = () => {
@@ -54,6 +55,9 @@ const Booking = () => {
 
     return (
         <div>
+            <Helmet>
+                <title>StayZen | Booking</title>
+            </Helmet>
             <div className="flex flex-col lg:flex-row items-center w-10/12 mx-auto lg:h-[85vh]">
                 <img src={bookingImg} alt="bookingImg" className="lg:w-1/2" />
                 <form onSubmit={handleBooking} className="card-body lg:w-1/2">
@@ -87,7 +91,7 @@ const Booking = () => {
                         </div>
                     </div>
                     <div className="form-control mt-6">
-                        <input type="submit" className="btn btn-warning font-extrabold" value="Order Confirm" />
+                        <input type="submit" className="btn btn-warning font-extrabold" value="Book Confirm" />
                     </div>
                 </form>
             </div>

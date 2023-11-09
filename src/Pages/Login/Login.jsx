@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import loginImg from "../../../public/logIn1.jpg"
 import { useContext } from "react";
 import { AuthContext } from "../../providers/AuthProviders";
+import { Helmet } from "react-helmet-async";
 const Login = () => {
     const { signInUser, googleSignIn } = useContext(AuthContext);
     const handleLogin = e => {
@@ -32,6 +33,9 @@ const Login = () => {
 
     return (
         <div className="hero min-h-[85vh]">
+            <Helmet>
+                <title>StayZen | Login</title>
+            </Helmet>
             <div className="hero-content flex-col lg:flex-row-reverse lg:gap-12">
                 <div className="w-1/2">
                     <img src={loginImg} alt="" />
