@@ -1,8 +1,9 @@
 /* eslint-disable react/prop-types */
 
-const BookingTable = ({ booking }) => {
+const BookingTable = ({ booking, handleDelete }) => {
     console.log(booking);
-    const { room_name, price, number, img, email, cheakOut, cheakIn } = booking;
+    const { room_name, price, number, img, email, cheakOut, cheakIn, _id } = booking;
+
     return (
         <tr>
             <td>
@@ -29,7 +30,9 @@ const BookingTable = ({ booking }) => {
                 <span className="">{`CheakOut: ${cheakOut}`}</span>
             </td>
             <th>
-                <button className="btn btn-ghost btn-xs">details</button>
+                <button className="btn btn-primary btn-xs mb-2">Update</button>
+                <br />
+                <button onClick={() => handleDelete(_id)} className="btn btn-neutral btn-xs">Delete</button>
             </th>
         </tr>
     );
