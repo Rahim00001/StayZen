@@ -12,4 +12,4 @@ StayZen Is a Hotel Booking Web Application. Discover and book accommodations eff
 - Responsive design 
 
 ## [Live Link](https://stayzen-a10.web.app)
-## [Serveer Side Code Link](https://github.com/Porgramming-Hero-web-course/b8a11-server-side-Rahim00001)
+## [Server Side Code Link](https://github.com/Porgramming-Hero-web-course/b8a11-server-side-Rahim00001)
