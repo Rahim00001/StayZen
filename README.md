@@ -1,8 +1,15 @@
-# React + Vite
+# StayZen
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+StayZen Is a Hotel Booking Web Application. Discover and book accommodations effortlessly, with a user-friendly interface and a vast selection of hotel rooms
 
-Currently, two official plugins are available:
+## Main Features 
+- Simple & user friendly UI
+- Email password & Google based user authentication 
+- Dynamic room detiles page
+- Room booking features 
+- Update booking features 
+- Delete booking features
+- Responsive design 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## [Live Link](https://stayzen-a10.web.app)
+## [Serveer Side Code Link](https://github.com/Porgramming-Hero-web-course/b8a11-server-side-Rahim00001)
